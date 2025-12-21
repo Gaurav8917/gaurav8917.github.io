@@ -1,10 +1,10 @@
-/* RESET */
+/* FULL PAGE BACKGROUND */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    background: url('profile.jpg') no-repeat center center fixed;
+    background: url("profile.jpg") no-repeat center center fixed;
     background-size: cover;
+    color: #ffffff;
 }
 
 /* DARK OVERLAY */
@@ -15,29 +15,29 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.65);
-    z-index: 0;
+    z-index: 1;
 }
 
-/* CIRCULAR PROFILE PIC */
+/* CIRCULAR PROFILE IMAGE */
 .profile-pic {
     position: fixed;
     top: 30px;
     right: 40px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .profile-pic img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 3px solid #ffffff;
     object-fit: cover;
 }
 
-/* MAIN CONTENT */
+/* CONTENT */
 .content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 900px;
     margin: 60px auto;
     padding: 20px 30px;
@@ -45,25 +45,18 @@ body {
 
 /* HEADINGS */
 h1 {
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-
-.designation {
-    font-size: 18px;
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
-.guidance {
-    font-size: 16px;
-    margin-bottom: 20px;
+.subtitle {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: #cccccc;
     margin: 25px 0;
+    border: 1px solid #ffffff33;
 }
 
 /* SECTIONS */
@@ -72,7 +65,7 @@ section {
 }
 
 section h2 {
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #ffffff55;
     padding-bottom: 6px;
     margin-bottom: 12px;
 }
@@ -82,13 +75,12 @@ ul {
 }
 
 li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
 footer {
     margin-top: 40px;
     font-size: 14px;
-    text-align: center;
-    color: #dddddd;
+    opacity: 0.85;
 }
