@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #222;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* PROFILE */
+.profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile img {
+    width: 180px;
+    border-radius: 5px;
+}
+
+.info h1 {
+    margin-bottom: 5px;
+}
+
+.designation {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* LINKS SECTION */
+.links {
+    margin-top: 12px;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    margin-right: 6px;
+    font-size: 13px;
+    color: #222;
+}
+
+.links a:hover {
+    background: #f2f2f2;
+}
+
+/* ANNOUNCEMENT */
+.announcement {
+    margin: 24px 0;
+    color: #d00;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 28px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 4px;
+}
+
+/* UPDATES */
+.updates {
+    list-style: none;
+    padding-left: 0;
+}
+
+.updates li {
+    margin-bottom: 6px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #fafafa;
+    font-size: 14px;
+}
