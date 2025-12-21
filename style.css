@@ -1,62 +1,40 @@
-/* FULL PAGE BACKGROUND */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: url("profile.jpg") no-repeat center center fixed;
-    background-size: cover;
+    color: #111;
+    background: #ffffff;
+}
+
+/* HEADER */
+.header {
+    background: #1a1a1a;
     color: #ffffff;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-/* DARK OVERLAY */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.65);
-    z-index: 1;
-}
-
-/* CIRCULAR PROFILE IMAGE */
-.profile-pic {
-    position: fixed;
-    top: 30px;
+/* PROFILE IMAGE */
+.profile-image {
+    position: absolute;
+    top: 18px;
     right: 40px;
-    z-index: 3;
 }
 
-.profile-pic img {
-    width: 160px;
-    height: 160px;
+.profile-image img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 3px solid #ffffff;
     object-fit: cover;
+    background: #fff;
 }
 
-/* CONTENT */
-.content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px 30px;
-}
-
-/* HEADINGS */
-h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-hr {
-    margin: 25px 0;
-    border: 1px solid #ffffff33;
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
 }
 
 /* SECTIONS */
@@ -65,22 +43,23 @@ section {
 }
 
 section h2 {
-    border-bottom: 2px solid #ffffff55;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
-ul {
-    padding-left: 18px;
+section ul {
+    padding-left: 20px;
 }
 
-li {
-    margin-bottom: 8px;
+section li {
+    margin-bottom: 6px;
 }
 
 /* FOOTER */
-footer {
-    margin-top: 40px;
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
     font-size: 14px;
-    opacity: 0.85;
 }
