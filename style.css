@@ -3,46 +3,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* BODY BACKGROUND IMAGE WITH OPACITY */
+/* BACKGROUND IMAGE WITH OPACITY */
 body {
-    position: relative;
     min-height: 100vh;
+    position: relative;
     color: #ffffff;
 }
 
-/* Background image layer */
 body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("profile.jpg") no-repeat center center;
-    background-size: cover;
-    opacity: 0.18;            /* 🔥 Adjust opacity here */
+    inset: 0;
+    background: url("profile.jpg") center/cover no-repeat;
+    opacity: 0.2;            /* 🔥 Controls background visibility */
     z-index: -1;
 }
 
-/* MAIN CONTENT */
+/* CONTENT AREA */
 .content {
     max-width: 900px;
-    margin: auto;
-    padding: 60px 40px;
-    background: rgba(0, 0, 0, 0.55); /* improves readability */
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6); /* ensures readability */
     border-radius: 12px;
 }
 
-/* PROFILE IMAGE – TOP RIGHT */
+/* PROFILE PHOTO (TOP RIGHT) */
 .profile-pic {
     position: fixed;
-    top: 30px;
-    right: 40px;
-    width: 180px;
-    height: 180px;
+    top: 25px;
+    right: 35px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #ffffff;
@@ -55,15 +50,15 @@ body::before {
     object-fit: cover;
 }
 
-/* HEADINGS */
+/* TEXT STYLING */
 h1 {
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .subtitle {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 h2 {
@@ -73,19 +68,21 @@ h2 {
     display: inline-block;
 }
 
-/* LISTS */
 ul {
     margin-left: 20px;
     margin-top: 10px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 40px;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
     font-size: 14px;
-    opacity: 0.8;
+    opacity: 0.85;
 }
