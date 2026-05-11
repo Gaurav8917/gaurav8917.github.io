@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Updates | Gaurav Singh</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updates | Gaurav Singh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-logo">GS</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="education.html">Education</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <li><a href="updates.html" class="active">Updates</a></li>
-  </ul>
-  <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Gaurav Singh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link active" href="updates.html">Updates</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <div class="page-header">
-  <h1>Updates</h1>
-  <p>News & Announcements</p>
+  <div class="container">
+    <h1>Updates</h1>
+    <p>News &amp; Announcements</p>
+  </div>
 </div>
 
-<div class="updates-list">
+<div class="container main-container">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <div class="content-section">
+        <h3 class="section-title">Recent Updates</h3>
+        <div class="updates-list">
 
-  <div class="update-row">
-    <div class="update-row-date">Jun – Dec 2025</div>
-    <div class="update-row-content">
-      Teaching Assistant – AICTE QIP (Artificial Intelligence)
+          <div class="update-item">
+            <span class="update-date">Jun – Dec, 2025</span>
+            <span class="update-text">Teaching Assistant – AICTE QIP (Artificial Intelligence) at IIIT Vadodara.</span>
+          </div>
+
+          <div class="update-item">
+            <span class="update-date">2024</span>
+            <span class="update-text">Joined IIIT Vadodara as a PhD Scholar in the field of Image Processing and Deep Learning.</span>
+          </div>
+
+          <!-- Add more updates here in the same format -->
+
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- Add more updates here as they occur -->
-
 </div>
 
-<footer class="footer">
-  <p>© 2025 Gaurav Singh · Academic Homepage · IIIT Vadodara</p>
+<footer class="site-footer">
+  <div class="container">
+    <p>Copyright &copy; Gaurav Singh &nbsp;&bull;&nbsp; PhD Scholar, IIIT Vadodara</p>
+  </div>
 </footer>
 
-<script>
-  const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
