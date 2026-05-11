@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Updates | Gaurav Singh</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updates | Gaurav Singh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="header">
-    <div class="site-title">Gaurav Singh</div>
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="updates.html">Updates</a>
+<nav class="navbar">
+  <div class="nav-logo">GS</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="updates.html" class="active">Updates</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+</nav>
+
+<div class="page-header">
+  <h1>Updates</h1>
+  <p>News & Announcements</p>
+</div>
+
+<div class="updates-list">
+
+  <div class="update-row">
+    <div class="update-row-date">Jun – Dec 2025</div>
+    <div class="update-row-content">
+      Teaching Assistant – AICTE QIP (Artificial Intelligence)
     </div>
+  </div>
+
+  <!-- Add more updates here as they occur -->
+
 </div>
 
-<div class="container">
-    <h2>Updates</h2>
+<footer class="footer">
+  <p>© 2025 Gaurav Singh · Academic Homepage · IIIT Vadodara</p>
+</footer>
 
-    <ul class="timeline">
-        <li>
-            <strong>2025:</strong>
-            Teaching Assistant for AICTE QIP on Artificial Intelligence
-        </li>
-    </ul>
-</div>
-
-<div class="footer">© 2025 Gaurav Singh</div>
-
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+</script>
 </body>
 </html>
